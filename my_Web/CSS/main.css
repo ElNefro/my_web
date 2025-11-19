@@ -109,13 +109,13 @@ button:hover {
 
 
 /* Подсказка сверху для ссылки */
-a.tooltip-info[data-tooltip-top] {
+button.tooltip-info[data-tooltip-top] {
     position: relative;
     cursor: pointer;
 }
 
 /* Основная подсказка */
-a.tooltip-info[data-tooltip-top]::after {
+button.tooltip-info[data-tooltip-top]::after {
     content: attr(data-tooltip-top);
     position: absolute;
     bottom: 100%;
@@ -139,7 +139,7 @@ a.tooltip-info[data-tooltip-top]::after {
 }
 
 /* Стрелка подсказки */
-a.tooltip-info[data-tooltip-top]::before {
+button.tooltip-info[data-tooltip-top]::before {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -154,12 +154,12 @@ a.tooltip-info[data-tooltip-top]::before {
 }
 
 /* Плавное появление подсказки при наведении */
-a.tooltip-info[data-tooltip-top]:hover::after {
+button.tooltip-info[data-tooltip-top]:hover::after {
     opacity: 1;
     transform: translateX(-50%) translateY(-8px);
 }
 
-a.tooltip-info[data-tooltip-top]:hover::before {
+button.tooltip-info[data-tooltip-top]:hover::before {
     opacity: 1;
-    transform: translateX(-50%) translateY(0px);
+    transform: translateX(-50%) translateY(1px);
 }
